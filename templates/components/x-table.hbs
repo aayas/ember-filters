@@ -1,0 +1,48 @@
+<div id='LIST' style = "background: greenyellow;width: 400px;margin-right: 90%;border-radius: 7px;position:absolute;" >
+	<div>
+		{{#each items as |item x|}}
+			<div style="width:100px;float:left">
+			{{x}}
+			</div>
+			<div style="width:100px;float:left">
+			   {{item.brand}}   
+			</div>
+			<div style="width:100px;float:left">
+			   {{item.type}}   
+			</div>
+			<div style="width:100px;float:left">
+			   {{item.price}}   
+			</div>
+			<br>
+		{{/each}}
+	</div>
+</div>
+<div style =     "background: yellowgreen;
+    width: 100px; border-radius: 7px;
+   height: 300px;     position:absolute;
+float:left;
+    /* margin-top: 0px;     top: -315px; */
+    left: 90%;">
+    {{#each brands as |brand id|}}
+    <div>
+
+    {{input type='checkbox' checked=brand.x}}
+    {{brand.s}}
+	</div>
+    {{/each}}
+</div>
+
+<div style =     "background: yellow; position:absolute;
+    width: 100px; border-radius: 7px;
+   height: 300px;     position: relative;
+
+    /* margin-top: 0px;     top: -615px; */
+    left: 60%;">
+    {{#each types as |type|}}
+    <div>
+
+    {{input type='checkbox' checked=type.x}}
+    {{type.s}}
+	</div>
+    {{/each}}
+</div>
